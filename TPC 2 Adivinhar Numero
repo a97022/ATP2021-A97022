@@ -1,0 +1,23 @@
+def jogo ():
+    print("""\t ADIVINHA O NÚMERO EM QUE ESTOU A PENSAR
+
+Pensa num número de 0 a 100
+
+O número em que pensaste é maior que 50?""")
+    
+    acertou= False
+    num= 50
+    tentativas=0
+    p= input("prime 1 se sim e 0 se não: ")
+    
+    while acertou == False:
+        if p == 1:
+            a = int(num%2)
+            print (a)
+            b = num + a
+            print (b)
+            p = input(" O número em que pensaste é maior que ", b, "? \n prime 1 se sim e 0 se não:")
+
+            
+        
+jogo()
